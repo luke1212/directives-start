@@ -23,6 +23,13 @@
       <p appHighLighter [defaultColor]="'yellow'" [highlightColor]="'red'">
         Only odd numbers are shown
       </p>
+
+      <div [ngSwitch]="value">
+        <strong *ngSwitchCase="10">One</strong>
+        <strong *ngSwitchCase="20">Two</strong>
+        <strong *ngSwitchCase="30">Three</strong>
+        <strong *ngSwitchDefault>Default</strong>
+      </div>
     </div>
   </div>
 </div>
