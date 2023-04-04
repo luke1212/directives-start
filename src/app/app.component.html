@@ -7,12 +7,12 @@
       <br /><br />
       <ul class="list-group">
         <div>
-          <strong *ngIf="onlyOdd"
+          <strong *ngIf="!onlyOdd"
             ><li class="list-group-item" *ngFor="let odd of oddNumbers">
               {{ odd }}
             </li>
           </strong>
-          <strong *ngIf="!onlyOdd"
+          <strong *appUnless="!onlyOdd"
             ><li class="list-group-item" *ngFor="let even of evenNumbers">
               {{ even }}
             </li>

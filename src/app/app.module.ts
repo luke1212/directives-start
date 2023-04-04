@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HighLighterDirective } from './directive/high-lighter.directive';
+import { UnlessDirective } from './directive/unless.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HighLighterDirective
+    HighLighterDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,
