@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
-import { HighLighterDirective } from './high-lighter.directive';
+import { HighLighterDirective } from './directive/high-lighter.directive';
 
 @NgModule({
   declarations: [
