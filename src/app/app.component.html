@@ -19,7 +19,10 @@
           </strong>
         </div>
       </ul>
-      <p appHighLighter>Only odd numbers are shown</p>
+      <!-- the property(background-color) binding need to be on the same element with directive(appHighLighter) -->
+      <p appHighLighter [defaultColor]="'yellow'" [highlightColor]="'red'">
+        Only odd numbers are shown
+      </p>
     </div>
   </div>
 </div>
